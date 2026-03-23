@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL 0 | Initiate Sequence</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+</head>
+<body class="void">
+    <div class="light-mode-warning">THE SIGNAL REQUIRES DARKNESS.<br>SWITCH YOUR DEVICE TO DARK MODE.</div>
+    
+    <div id="idle-stream" class="idle-stream"></div>
+
+    <div class="center-mass">
+        <h1 class="glitch" data-text="ASTRAL_PROJECTION_PROTOCOL">ASTRAL_PROJECTION_PROTOCOL</h1>
+        
+        <div class="cipher-container">
+            <img src="blur_qr.jpg" alt="Optic Cipher" class="hacker-qr">
+            <p class="subtext">Scan with device to isolate the audio frequency, or hold to optical scanner to bypass.</p>
+        </div>
+        
+        <div class="input-matrix">
+            <label for="freq-input">ENTER FREQUENCY / KEY:</label>
+            <input type="password" id="freq-input" maxlength="4" autocomplete="off" autofocus>
+        </div>
+        
+        <div class="hardware-controls">
+            <p class="subtext" style="width: 100%; margin-bottom: 5px; color: var(--quantum-red);">[SYSTEM REQUIREMENT: HARDWARE ACCESS FOR UPLINK]</p>
+            <button id="mic-trigger" class="hardware-btn">[ INITIATE ACOUSTIC SCAN ]</button>
+            <button id="optic-trigger" class="hardware-btn">[ INITIATE OPTICAL UPLINK ]</button>
+        </div>
+        
+        <canvas id="canvas" hidden></canvas>
+        <video id="video" hidden autoplay playsinline></video>
+        
+        <p id="system-message"></p>
+    </div>
+    <script src="core_logic.js"></script>
+</body>
+</html>
